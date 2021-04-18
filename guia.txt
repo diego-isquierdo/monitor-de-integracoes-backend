@@ -1,0 +1,69 @@
+APP monitor - BACKEND
+
+AMBIENTE
+pip install virtalenv
+
+virtualenv -p python3 venv
+	* venv - nome do diretório virtual
+
+. venv/bin/activate
+	* 'acessar' ambiente virtual
+
+* dentro do venv
+venv/bin/pip3 install flask
+	* instala flask no ambienter virtual
+
+venv/bin/pip3 freeze
+	* informa os itens instalados no ambiente virtual
+
+venv/bin/pip3 freeze > requirements.txt
+	*guarda em arquivo os itens instalados no ambiente
+
+venv/bin/pip3 install -r requirements.txt
+	* possibilita instalar  todos os intens de uma só vez
+
+DIRETÓRIOS
+- app
+	- controllers 
+	- models - entidades
+	- static - sites estáticos
+	- templates - templates sites
+
+
+ARQUIVOS __init.py__
+padarão de módulos
+	* criar 1 arquivo por diretório 
+- init.py indica que a pasta é um módulo e este pode ser importado por outras classes
+
+
+CONTROLLERS
+
+* default.py - rota padrão
+
+
+
+SEPARAR ATRIBUIÇÕES
+raiz do projeto (/monitor)
+
+- run.py - inicialização do pojeto
+- __ini__.py
+	na raiz da pasta 'app' e nos sub dir para tornar os mesmo modulos a serem importados
+
+
+
+MODELS
+Tratar as entidades que serão referencia para comunicar com o BD
+
+####NÃO UTILIZADO DATABASE############
+
+CONFIGURAÇÕES
+- config.py na raiz 
+	config de variavéis estáticas de configuração do sistema, como DEBUG=True entre outras
+
+
+ROTAS
+__init__.py - efetua os imports dos controllers
+
+
+
+
