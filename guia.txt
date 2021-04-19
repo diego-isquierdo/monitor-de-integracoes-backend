@@ -64,6 +64,21 @@ CONFIGURAÇÕES
 ROTAS
 __init__.py - efetua os imports dos controllers
 
+###########################################
+*Dicas
+
+@app.route("/test", defaults={'name':None})
+@app.route("/test/<name>")
+def test(name):
+    if name:
+        return "ola / obas %s" % name
+    else:
+        return "Oba"
 
 
 
+
+
+
+TEMPLATES
+criar templates na pasta /templates

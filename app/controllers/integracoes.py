@@ -1,5 +1,11 @@
+from flask import render_template
 from app import app
 
-@app.route("/integracoes", methods=['GET'])
+
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
+@app.route("/integracoes")
 def integracoes():
-    return "INTEGRACOES"
+    return render_template("integracoes.html")
